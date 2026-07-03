@@ -1,7 +1,21 @@
-// Your real projects, pulled from your resume.
-// ⚠️ Fill in the actual GitHub/Live URLs where marked — resume only had icons, not links.
 
 export const projects = [
+  {
+    id: "portfolio-website",
+    name: "Personal Portfolio Website",
+    image: "https://placehold.co/600x400/C2542D/F7F1E8?text=Portfolio",
+    shortDescription: "This very site — a fully responsive portfolio with dark mode and animations.",
+    techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "React Router"],
+    description:
+      "A fully responsive personal portfolio built from scratch with React and Tailwind CSS. Features a class-based dark/light mode toggle with persisted preference, scroll-triggered animations via Framer Motion, and dedicated detail pages for each project — including this one.",
+    liveLink: "https://portfolio-rosy-rho-54.vercel.app",
+    githubLink: "https://github.com/rifahjahantamanna/Portfolio",
+    challenges:
+      "Getting dark mode to apply cleanly across every component without hardcoding colors everywhere meant switching the whole palette to CSS variables early on, rather than adding dark: classes one by one.",
+    improvements:
+    "Migrated profile and project content to Supabase, so I can now edit everything — bio, skills, projects — directly through a database table instead of touching code or redeploying. Next up: a small authenticated admin form instead of the raw table editor, and a custom domain instead of the default Vercel subdomain."
+      
+  },
   {
     id: "vocabnex",
     name: "VocabNex — AI-Powered Vocabulary Builder",
@@ -32,19 +46,19 @@ export const projects = [
     improvements:
       "Next up: a lightweight frontend dashboard for the API, plus webhook notifications when issues change status.",
   },
-  {
-    id: "brisc2025",
-    name: "BRISC2025 — Brain Tumor Classification & Segmentation",
-    image: "https://placehold.co/600x400/2A1F1A/F7F1E8?text=BRISC2025",
-    shortDescription: "U-Net based MRI tumor segmentation and classification.",
-    techStack: ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib"],
-    description:
-      "Implemented and compared U-Net and Attention U-Net architectures for simultaneous MRI tumor segmentation and multi-class classification (glioma, meningioma, pituitary, no tumor), using a dual-task loss combining Dice + BCE for segmentation and Cross-Entropy for classification, with joint optimization.",
-    liveLink: "",
-    githubLink: "https://github.com/yourusername/brisc2025", // ⚠️ add real repo link
-    challenges:
-      "Getting the dual-task loss to balance correctly was tricky — segmentation and classification losses had very different scales, so weighting them required careful tuning to stop one task from dominating training.",
-    improvements:
-      "Exploring 3D volumetric segmentation instead of 2D slices, and testing the model's generalization on external MRI datasets.",
-  }
+  // {
+  //   id: "brisc2025",
+  //   name: "BRISC2025 — Brain Tumor Classification & Segmentation",
+  //   image: "https://placehold.co/600x400/2A1F1A/F7F1E8?text=BRISC2025",
+  //   shortDescription: "U-Net based MRI tumor segmentation and classification.",
+  //   techStack: ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib"],
+  //   description:
+  //     "Implemented and compared U-Net and Attention U-Net architectures for simultaneous MRI tumor segmentation and multi-class classification (glioma, meningioma, pituitary, no tumor), using a dual-task loss combining Dice + BCE for segmentation and Cross-Entropy for classification, with joint optimization.",
+  //   liveLink: "",
+  //   githubLink: "https://github.com/yourusername/brisc2025", // ⚠️ add real repo link
+  //   challenges:
+  //     "Getting the dual-task loss to balance correctly was tricky — segmentation and classification losses had very different scales, so weighting them required careful tuning to stop one task from dominating training.",
+  //   improvements:
+  //     "Exploring 3D volumetric segmentation instead of 2D slices, and testing the model's generalization on external MRI datasets.",
+  // }
 ];

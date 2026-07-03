@@ -2,7 +2,7 @@
 
 A fully responsive personal portfolio built with React, Vite, and Tailwind CSS. Includes dark/light mode, scroll animations, and dedicated detail pages for each project.
 
-**Live site:** _add your deployed link here_
+**Live site:** https://portfolio-rosy-rho-54.vercel.app/
 
 ---
 
