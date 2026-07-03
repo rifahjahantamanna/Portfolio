@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default) — warm cream & brown, matched to the photo's palette */
+:root {
+  --color-paper: 247 241 232;   /* warm cream */
+  --color-ink: 42 31 26;        /* warm dark brown text */
+  --color-surface: 255 253 250; /* warm off-white cards */
+  --color-muted: 138 123 110;   /* warm taupe */
+}
+
+/* Dark theme — deep warm brown instead of cool navy */
+.dark {
+  --color-paper: 26 19 16;
+  --color-ink: 241 232 224;
+  --color-surface: 42 33 28;
+  --color-muted: 168 150 138;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 21px; /* default is 16px — raise/lower this to scale ALL text site-wide */
+}
+
+body {
+  @apply bg-paper text-ink font-body transition-colors duration-300;
+  background-image: radial-gradient(rgb(var(--color-ink) / 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Alternate section backgrounds so sections read as distinct blocks, not one flat wall */
+.section-alt {
+  @apply bg-surface;
+  position: relative;
+}
+
+/* Soft glowing blobs used behind the Hero for depth without clutter */
+.bg-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+::selection {
+  @apply bg-accent/20;
+}
