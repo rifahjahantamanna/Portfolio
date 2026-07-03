@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
     <motion.div
       whileHover={{ y: -6 }}
       transition={{ duration: 0.25 }}
-      className="bg-surface rounded-xl overflow-hidden border border-ink/10 shadow-sm hover:shadow-lg transition-shadow flex flex-col"
+      className="bg-surface rounded-xl overflow-hidden border border-ink/10 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full"
     >
       <img src={project.image} alt={project.name} className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-1">

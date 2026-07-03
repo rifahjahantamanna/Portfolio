@@ -45,20 +45,6 @@ export const projects = [
       "Designing role-based access control cleanly meant keeping authorization logic out of individual route handlers — I moved it into reusable middleware so permissions stay consistent as new routes get added.",
     improvements:
       "Next up: a lightweight frontend dashboard for the API, plus webhook notifications when issues change status.",
-  },
-  // {
-  //   id: "brisc2025",
-  //   name: "BRISC2025 — Brain Tumor Classification & Segmentation",
-  //   image: "https://placehold.co/600x400/2A1F1A/F7F1E8?text=BRISC2025",
-  //   shortDescription: "U-Net based MRI tumor segmentation and classification.",
-  //   techStack: ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib"],
-  //   description:
-  //     "Implemented and compared U-Net and Attention U-Net architectures for simultaneous MRI tumor segmentation and multi-class classification (glioma, meningioma, pituitary, no tumor), using a dual-task loss combining Dice + BCE for segmentation and Cross-Entropy for classification, with joint optimization.",
-  //   liveLink: "",
-  //   githubLink: "https://github.com/yourusername/brisc2025", // ⚠️ add real repo link
-  //   challenges:
-  //     "Getting the dual-task loss to balance correctly was tricky — segmentation and classification losses had very different scales, so weighting them required careful tuning to stop one task from dominating training.",
-  //   improvements:
-  //     "Exploring 3D volumetric segmentation instead of 2D slices, and testing the model's generalization on external MRI datasets.",
-  // }
+  }
+  
 ];

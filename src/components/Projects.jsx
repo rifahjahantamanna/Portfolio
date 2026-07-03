@@ -13,8 +13,8 @@ export default function Projects() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, i) => (
-            <Reveal key={project.id} delay={i * 0.1}>
-              <ProjectCard project={project} />
+            <Reveal key={project.id} delay={i * 0.1} className="h-full">
+                <ProjectCard project={project} />
             </Reveal>
           ))}
         </div>
