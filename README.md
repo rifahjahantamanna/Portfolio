@@ -112,5 +112,4 @@ This project deploys cleanly to **Vercel** or **Netlify**:
 ## Contact
 
 - Email: rifah1119@gmail.com
-- LinkedIn: _add your link_
-- GitHub: _add your link_
+
